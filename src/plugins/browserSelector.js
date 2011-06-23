@@ -55,7 +55,7 @@ L.extend({
 		 * Condicionais IE
 		 */
 		if(ua[1] == 'ie'){
-		
+			
 			for(var ver = 3; ver < 10; ver++) {
 				if(ua[2] < ver) html.addClass('lt-ie-' + ver);
 			}
@@ -122,7 +122,7 @@ L.extend({
 			item = item.replace(/(^|-)[a-z]/ig, function(val){
 				return val.replace('-', '').toUpperCase();
 			});
-
+			
 			if(item in style) return true;
 			
 			/**

@@ -202,14 +202,14 @@ L.extend({
 						setTimeout( arguments.callee, 1 );
 						return;
 					}
-				
-				L.ready();
-				
+					
+					L.ready();
+					
 				})();
-			
+				
 			}
 		}
-	
+		
 	},
 	
 	/**

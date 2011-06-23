@@ -78,7 +78,7 @@ Array.implement({
 	 * @param optional [object] _this
 	 */
 	filter: function(fn, _this){
-	
+		
 		var results = [];
 		
 		this.each(function(value, i, array){
@@ -127,7 +127,7 @@ Array.implement({
 		
 		return results;
 	},
-
+	
 	/**
 	 * Remove um determinado item da array, se existir
 	 * @param [mixed] item

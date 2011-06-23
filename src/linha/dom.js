@@ -60,7 +60,7 @@ L.extend({
 		
 		if(!elem || !parent) return false;
 		
-		return( 
+		return(
 			(elem.parentNode == parent) || (elem.parentNode != document) &&
 			L.isChildren(elem.parentNode, parent)
 		);
@@ -302,7 +302,7 @@ L.implement({
 			
 			if(this.nodeType === 1)
 				this.removeAttribute(name);
-		
+			
 		});
 		
 	},
@@ -396,7 +396,7 @@ L.implement({
 			if( value.constructor == Array && /radio|checkbox/.test(this.type) ){
 				
 				this.checked = ( value.indexOf(this.value) >= 0 || value.indexOf(this.name) >= 0);
-			
+				
 			/**
 			 * Se for select
 			 */
@@ -411,13 +411,13 @@ L.implement({
 				 * Processa cada opção do array
 				 */
 				L('option', this).each(function(){
-				
+					
 					this.selected = ( values.indexOf(this.value) >= 0 || values.indexOf(this.text) >= 0);
-				
+					
 				});
 				
 				if(!values.length) this.selectedIndex = -1;
-			
+				
 			/**
 			 * Demais
 			 */

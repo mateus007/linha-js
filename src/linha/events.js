@@ -231,7 +231,7 @@ L.implement({
 				
 				else if(this.detachEvent)
 					this.detachEvent('on' + type, fn);
-			
+				
 			}
 		});
 	},

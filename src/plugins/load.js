@@ -81,9 +81,9 @@ L.extend({
 				var state = s.readyState;
 				
 				if(!state || state.test(/loaded|complete/)){
-				
+					
 					ok++;
-				
+					
 					/**
 					 * Executa a função?
 					 * Só executa se todos os itens foram carregados
@@ -92,7 +92,7 @@ L.extend({
 						callback.call();
 					
 				}
-			
+				
 				/**
 				 * Fix de memória IE
 				 */
@@ -100,7 +100,7 @@ L.extend({
 			};
 			
 			L.head.appendChild(s);
-		
+			
 		});
 		
 		return this;
@@ -140,7 +140,7 @@ L.extend({
 			l.media = (media || 'screen');
 			
 			L.head.appendChild(l);
-		
+			
 		});
 		
 		return this;
