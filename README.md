@@ -49,6 +49,94 @@ Para compilar sei Linha JS, você precisa ter em mãos [NodeJS + NPM + Tuild](ht
 	
 Recomendo que dêem uma olhada no arquivo /build/build.js, pois nele há algumas opções para customização do compilador.
 
+FUNÇÔES
+=========================
+	
+	// String - Prototype
+	String.prototype.test(pattern, flags)
+	String.prototype.toArray()
+	String.prototype.toUri()
+	String.prototype.trim()
+	
+	// Object - Extend
+	Object.clean(object, _this)
+	Object.each(object, fn, _this)
+	Object.every(object, fn, _this)
+	Object.filter(object, fn, _this)
+	Object.forEach(object, fn, _this)
+	Object.keyOf(object, value)
+	Object.keys(object)
+	Object.map(object, fn, _this)
+	Object.merge(object, merge)
+	Object.remove(object, item)
+	Object.size(object)
+	Object.toArray(object)
+	Object.values(object)
+	
+	// Array - Extend
+	Array.each: function(array, fn, _this){
+	Array.forEach: function(array, fn, _this){
+	
+	// Array - Prototype
+	Array.prototype.clean()
+	Array.prototype.clone()
+	Array.prototype.each(fn, _this)
+	Array.prototype.every(fn, _this)
+	Array.prototype.filter(fn, _this)
+	Array.prototype.forEach(fn, _this)
+	Array.prototype.indexOf(item, index)
+	Array.prototype.map(fn, _this)
+	Array.prototype.remove(item)
+	Array.prototype.size()
+	
+	// Funções Linha
+	L.delay(fn, tempo /*, arguments*/)
+	L.domReady()
+	L.eventTrigger(event, data, elem)
+	L.extend(object, extend)
+	L.is(type, item)
+	L.isChildren(elem, parent)
+	L.ready(fn)
+	L.regexClass(name)
+	
+	// DOM Manipulation
+	L(selector, context)
+	
+	L.fn.addClass(name)
+	L.fn.attr(name, value)
+	L.fn.bind(type, fn)
+	L.fn.css(style, value)
+	L.fn.data(name, value)
+	L.fn.delegate(selector, type, fn)
+	L.fn.each(fn)
+	L.fn.eq(eq)
+	L.fn.filter(fn)
+	L.fn.first()
+	L.fn.getStyle(name)
+	L.fn.hasClass(name)
+	L.fn.html(value)
+	L.fn.last()
+	L.fn.offset()
+	L.fn.position()
+	L.fn.push()
+	L.fn.removeAttr(name)
+	L.fn.removeClass(name)
+	L.fn.removeData(name)
+	L.fn.setStyle(name, value)
+	L.fn.size()
+	L.fn.sort()
+	L.fn.splice()
+	L.fn.text(text)
+	L.fn.toggleClass(name)
+	L.fn.trigger(type, data)
+	L.fn.unbind(type, fn)
+	L.fn.undelegate(selector, type, fn)
+	L.fn.val(value)
+	
+	//Extra
+	Function.prototype.extend(extend)
+	Function.prototype.implement(implement, overlay)
+	
 CHANGELOG
 =========================
 
