@@ -49,7 +49,7 @@ Para compilar sei Linha JS, você precisa ter em mãos [NodeJS + NPM + Tuild](ht
 	
 Recomendo que dêem uma olhada no arquivo /build/build.js, pois nele há algumas opções para customização do compilador.
 
-FUNÇÔES
+FUNÇÕES
 =========================
 	
 	// String - Prototype
