@@ -3,7 +3,7 @@
  * https://github.com/mateus007/linha-js
  *
  * Copyright 2011
- * By Mateus Souza - http://www.mateussouza.com
+ * By Mateus Souza - http://mateussouzaweb.com
  * Licensed under MIT and GPL License - http://www.opensource.org/licenses/mit-license.php || http://www.gnu.org/licenses/gpl.html
  */
 function L(selector, context){

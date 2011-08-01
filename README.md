@@ -1,6 +1,6 @@
 LINHA JS - 1.3.1
 =====================
-<https://github.com/mateus007/linha-js> || by Mateus Souza - mateussouzaweb@gmail.com | <http://mateussouza.com>
+<https://github.com/mateus007/linha-js> || by Mateus Souza - mateussouzaweb@gmail.com | <http://mateussouzaweb.com>
 
 ### Licença
 MIT and GPL License - <http://www.opensource.org/licenses/mit-license.php> || <http://www.gnu.org/licenses/gpl.html>
