@@ -1,40 +1,40 @@
 module('Core');
 
 test('Básico', function(){
-	
+
 	expect(3);
-	
+
 	ok(L, 'L');
 	ok(Function.prototype.extend, 'Extend');
 	ok(Function.prototype.implement, 'Implement');
-	
+
 });
 
 test('L.extend', function(){
-	
+
 	expect(1);
-	
+
 	var obj = {
-		exemplo: true, 
-		funcao: function(){ return true; } 
+		exemplo: true,
+		funcao: function(){ return true; }
 	};
-	
+
 	var obj2 = {
 		exemplo: false,
 		funcao: function(){ return true; },
 		outro: 20
 	};
-	
+
 	L.extend( obj, {exemplo: false, outro: 20});
-	
+
 	equal( obj.exemplo, obj2.exemplo, 'obj depois do extend, deve ter os mesmos valor do obj2');
-	
+
 });
 
 test('L.is', function(){
-	
+
 	expect(24);
-	
+
 	// TRUE
 	equal( L.is('empty', []), true, 'Empty' );
 	equal( L.is('node', document.getElementsByTagName('head')[0]), true, 'Node' );
@@ -48,7 +48,7 @@ test('L.is', function(){
 	equal( L.is('regex', /.+/g ), true, 'Regex' );
 	equal( L.is('null', null ), true, 'Nulo' );
 	equal( L.is('undefined', undefined), true, 'Indefinido' );
-	
+
 	// FALSE
 	equal( L.is('empty', [1, 2, 3]), false, 'NÃO Empty' );
 	equal( L.is('node', window), false, 'NÃO Node' );
@@ -62,33 +62,33 @@ test('L.is', function(){
 	equal( L.is('regex', '/.+/g' ), false, 'NÃO Regex' );
 	equal( L.is('null', undefined ), false, 'NÃO Nulo' );
 	equal( L.is('undefined', 'texto'), false, 'NÃO Indefinido' );
-	
+
 });
 
 asyncTest('L.delay', function(){
-	
+
 	expect(1);
-	
+
 	L.delay(function(argumento){
-	
+
 		equal(argumento, true, 'Aqui o argumento deve estar presente');
 		start();
-		
+
 	}, 200, true);
-	
+
 });
 
 asyncTest('L.ready', function(){
-	
+
 	expect(2);
-	
+
 	L.ready(function(){
-		
+
 		equal(L.isReady, true, 'Checa o valor de isReady');
 		ok(true, 'Aqui o DOM já está carregado');
-		
+
 		start();
-		
+
 	});
-	
+
 });
